@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #212121;
+  color: #fff;
 }
-a {
-  position: relative;
+.flex li {
+  display: inline-block;
   text-decoration: none;
-  display: inline-block;
 }
-
-header {
-  display: inline-block;
+.flex {
+  display: flex;
+  align-items: center;
 }
