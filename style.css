@@ -77,12 +77,13 @@ a:hover {
 
 .content .content-one {
   width: 45%;
-  padding: 40px 30px;
+  padding: 10px 30px;
   margin-left: 130px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content-one h1 {
-  font-size: 150px;
+  font-size: 140px;
   margin-bottom: 0;
 }
 
@@ -90,4 +91,19 @@ a:hover {
   font-weight: 700;
   font-size: 80px;
   color: #66bd88;
+}
+
+.content-one p {
+  font-size: 1.7rem;
+  padding: 10px 0;
+  font-weight: 100;
+  opacity: 70%;
+  letter-spacing: 2px;
+}
+
+.content-one .love {
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  color: #d7263d;
+  opacity: 70%;
 }
