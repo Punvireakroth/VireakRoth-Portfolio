@@ -99,6 +99,7 @@ a:hover {
   font-weight: 100;
   opacity: 70%;
   letter-spacing: 2px;
+  margin-bottom: 80px;
 }
 
 .content-one .love {
@@ -106,4 +107,18 @@ a:hover {
   letter-spacing: 2px;
   color: #d7263d;
   opacity: 70%;
+}
+
+.content-one .btn {
+  border: 2px solid #005554;
+  padding: 20px 75px;
+}
+
+/* content two */
+.content-two img {
+  position: absolute;
+  right: 60px;
+  opacity: 80%;
+  height: 500px;
+  align-items: ;
 }
