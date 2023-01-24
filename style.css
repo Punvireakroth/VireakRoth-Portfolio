@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  /* width: 80%; */
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   background-color: #212121;
   color: #fff;
   font-size: 20px;
+  font-weight: 200;
 }
 
 a {
@@ -76,7 +78,6 @@ a:hover {
 /* About Section */
 
 .contianer .content {
-  width: 100%;
   height: 80vh;
   justify-content: center;
 }
@@ -89,7 +90,7 @@ a:hover {
 }
 
 .content-one h1 {
-  font-size: 140px;
+  font-size: 5rem;
   margin-bottom: 0;
 }
 
@@ -115,6 +116,10 @@ a:hover {
   opacity: 70%;
 }
 
+.content-one .love:hover {
+  color:#DD4A48;
+}
+
 /* Button  */
 .BTN {
   margin-left: 140px;
@@ -125,8 +130,6 @@ a:hover {
 }
 
 .center {
-  /* width: 180px;
-  height: 60px; */
   width: 300px;
   height: 70px;
   position: absolute;
@@ -171,12 +174,43 @@ svg {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* ----------------------------------- */
+/* ----------------About------------------- */
+#about {
+  display: flexbox;
+  justify-content: center;
+  margin: 9rem;
+  width: 80%;
+}
 
-/* content two */
-.content-two img {
-  position: absolute;
-  right: 60px;
-  opacity: 80%;
-  height: 500px;
+
+/* ---------------Project------------------- */
+#project {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  margin: 9rem;
+  width: 80%;
+  
+}
+
+
+/* ---------------Contact ---------------------- */
+
+
+#contact {
+  display: flexbox;
+  justify-content: center;
+  margin: 9rem;
+  width: 80%;
+}
+
+
+/* ---------------Footer------------------------ */
+
+#footer {
+  display: flexbox;
+  justify-content: center;
+  margin:0 9rem;
+  margin-bottom: 2rem;
+  width: 80%;
 }
