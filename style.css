@@ -13,10 +13,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #212121;
+  background-color: #151823;
   color: #fff;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 a {
@@ -135,6 +135,7 @@ a:hover {
 
 /* Button  */
 .BTN {
+  margin-top: 140px;
   margin-left: 140px;
   transform: translate(-50%, -50%);
   display: flex;
@@ -234,6 +235,9 @@ svg {
   align-items: center;
   justify-content: space-around;
 }
+.project-title {
+  text-align: center;
+}
 
 .card {
   border-radius: 10px;
@@ -305,6 +309,161 @@ svg {
 .card:hover .project-content {
   opacity: 1;
 }
+
+/* Experience  */
+
+.experience-text {
+  text-align: center;
+}
+.tabs {
+  position: relative;
+  margin: 40px 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.tabs input {
+  position: absolute;
+  z-index: 1000;
+  width: 25%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  margin: 0;
+}
+
+.tabs input#tab-2 {
+  left: 25%;
+}
+
+.tabs input#tab-3 {
+  left: 50%;
+}
+
+.tabs input#tab-4 {
+  left: 75%;
+}
+
+.tabs label {
+  background: #66bd88;
+  line-height: 50px;
+  height: 60px;
+  position: relative;
+  top: 0;
+  padding: 0 20px;
+  float: left;
+  display: block;
+  width: 25%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+
+.tabs label:hover {
+  cursor: pointer;
+}
+
+.tabs label:after {
+  content: "";
+  background: #fefefe;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+}
+
+.tabs input:hover + label {
+  background: #fefefe;
+  color: #1a1a1a;
+  /* 66bd88 green*/
+}
+
+.tabs label:first-of-type {
+  z-index: 4;
+}
+
+.tab-label-2 {
+  z-index: 4;
+}
+
+.tab-label-3 {
+  z-index: 3;
+}
+
+.tab-label-4 {
+  z-index: 2;
+}
+
+.tabs input:checked + label {
+  background: #fefefe;
+  color: #1a1a1a;
+  z-index: 6;
+}
+
+.content-ex {
+  height: auto;
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 5;
+  top: -10px;
+  box-sizing: border-box;
+}
+
+.content-ex div {
+  position: relative;
+  float: left;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.content-ex div h2 {
+  margin-top: 0;
+}
+
+.tabs .tab-selector-1:checked ~ .content-ex .content-1,
+.tabs .tab-selector-2:checked ~ .content-ex .content-2,
+.tabs .tab-selector-3:checked ~ .content-ex .content-3,
+.tabs .tab-selector-4:checked ~ .content-ex .content-4 {
+  z-index: 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  height: auto;
+  width: 100%;
+  height: auto;
+  padding: 8%;
+}
+
+.content div h2 {
+  color: #66bd88;
+}
+
+.content div p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  margin: 0;
+  color: #777;
+}
+
 /* ---------------Contact ---------------------- */
 
 #contact {
@@ -320,10 +479,60 @@ svg {
 
 /* ---------------Footer------------------------ */
 
-#footer {
-  display: flexbox;
-  justify-content: center;
-  margin: 0 9rem;
+i {
+  font-size: 2.4rem;
+}
+
+.footer {
+  padding-block: 3rem;
+  background-color: #151823;
+  color: #666873;
+}
+
+.footer__container {
+  /* max-width: 145rem; */
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: auto;
+
+  resize: horizontal;
+  padding: 0 9rem;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  color: #fff;
   margin-bottom: 2rem;
-  width: 80%;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__list-item {
+  list-style: none;
+}
+
+.footer__list-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s;
+}
+
+.footer__list-link:hover {
+  color: #fff;
+}
+
+.footer__divider {
+  margin-block: 2.5rem;
+  border: none;
+  border-top: 1px solid rgba(252, 255, 255, 0.1);
 }
