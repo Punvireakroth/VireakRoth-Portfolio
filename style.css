@@ -365,7 +365,6 @@ svg {
   text-align: center;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  -webkit-transition: all 150ms ease 0s;
   transition: all 150ms ease 0s;
 }
 
@@ -410,6 +409,53 @@ svg {
   background: #fefefe;
   color: #1a1a1a;
   z-index: 6;
+}
+/* responsive label */
+@media screen and (max-width: 768px) {
+  .tabs label {
+    width: 100%;
+    font-size: 1.2rem;
+    height: auto;
+    line-height: normal;
+    box-shadow: none;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .tabs label {
+    width: 100%;
+    font-size: 1.2rem;
+    height: auto;
+    line-height: normal;
+    box-shadow: none;
+    padding: 10px;
+  }
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 768px) {
+  .tabs label {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1641px) {
+  .tabs label {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1335px) {
+  .tabs label {
+    font-size: 1rem;
+  }
+}
+/* Adjust font size for even smaller screens */
+@media screen and (max-width: 480px) {
+  .tabs label {
+    font-size: 1rem;
+  }
 }
 
 .content-ex {
